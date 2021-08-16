@@ -47,6 +47,16 @@ public class LinkedListOperation {
             head = (MyNode) head.getNext();
     }
 
+    /* Method to delete last element */
+    public void deleteLastNode() {
+        INode tempNode = head;
+        while (tempNode.getNext() != tail) {
+            tempNode = tempNode.getNext();
+        }
+        tempNode.setNext(null);
+        tail = (MyNode) tempNode;
+    }
+
     /*Method to display Linked List*/
     public void displayNode() {
         INode current = head;
