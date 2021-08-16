@@ -3,10 +3,7 @@ package linkedlist;
 public class LinkedListRunner {
 
     /*
-     create Linked List by adding 30 and 56 to 70
-     Node with value 70 is First Created
-     Next 30 is added to 70
-     Finally 56 is added to 30
+     inserting 30 between 56 and 70
      So the final Linked List Sequence will be : 56->30->70
      */
     public static void main(String[] args) {
