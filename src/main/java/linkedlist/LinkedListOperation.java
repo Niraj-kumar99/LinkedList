@@ -39,6 +39,14 @@ public class LinkedListOperation {
         newNode.setNext(tempNode);
     }
 
+    /* Method to delete first node in Linked List */
+    public void deleteFirstNode() {
+        if(head == null)
+            System.out.println("Linked List is empty!");
+        else
+            head = (MyNode) head.getNext();
+    }
+
     /*Method to display Linked List*/
     public void displayNode() {
         INode current = head;

@@ -18,7 +18,12 @@ public class LinkedListRunner {
         linked_list.appendNode(myFirstNode);
         linked_list.appendNode(myThirdNode);
         linked_list.insertInMiddle(myFirstNode,mySecondNode);
+
         //Displaying the nodes.
+        linked_list.displayNode();
+
+        // Removing First element From Linked List
+        linked_list.deleteFirstNode();
         linked_list.displayNode();
     }
 }
