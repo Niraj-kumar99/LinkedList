@@ -1,9 +1,9 @@
 package linkedlist;
 
-public class MyNode<K> {
+public class MyNode<K> implements INode<K>{
 
         private K key;
-        private MyNode next;
+        private INode<K> next;
 
     public MyNode(K key) {
         this.key = key;
@@ -18,11 +18,11 @@ public class MyNode<K> {
         this.key = key;
     }
 
-    public MyNode getNext() {
+    public INode<K> getNext() {
         return next;
     }
 
-    public void setNext(MyNode next) {
+    public void setNext(INode<K> next) {
         this.next = next;
     }
 }
